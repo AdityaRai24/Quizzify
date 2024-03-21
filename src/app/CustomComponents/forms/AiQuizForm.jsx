@@ -34,7 +34,7 @@ export function AiQuizForm() {
         return;
       }
       const response = await axios.post(
-        `${process.env.API_URL}/api/generateAiQuiz`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/generateAiQuiz`,
         { topic, selectedAmount, userId: session?.user?.id }
       );
       const data = JSON.parse(response.data.text);

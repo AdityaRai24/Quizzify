@@ -7,7 +7,7 @@ const page = async ({ params }) => {
   const quizId = params.quizId;
 
   const response = await axios.get(
-    `${process.env.API_URL}/api/getAiQuizDetails/${quizId}`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/getAiQuizDetails/${quizId}`
   );
   const data = response.data;
   return (
