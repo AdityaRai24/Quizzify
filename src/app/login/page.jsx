@@ -95,7 +95,7 @@ const LoginPage = () => {
           variant="outline"
           onClick={() => handleLogin()}
         >
-          <Image src={"/google.svg"} width={15} height={15} className="mr-2" />
+          <Image src={"/google.svg"} alt="google svg" width={15} height={15} className="mr-2" />
           <h1>Google</h1>
         </Button>
         <p className="text-center text-sm mt-2 text-muted-foreground">

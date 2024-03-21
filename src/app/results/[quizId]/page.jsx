@@ -65,6 +65,7 @@ const McqResult = async ({ params }) => {
             <Card className="my-5 p-10 w-[50%] mx-auto">
               <Image
                 src={imageUrl}
+                alt="gif"
                 className="mx-auto"
                 width={200}
                 height={200}
@@ -94,6 +95,7 @@ const McqResult = async ({ params }) => {
               {data?.questions?.map((item, index) => {
                 return (
                   <div
+                  key={index}
                     className="border flex items-center justify-between border-muted p-5 w-full rounded-[10px]
                    hover:border hover:border-muted-foreground hover:bg-muted cursor-pointer transition duration-300 ease"
                   >

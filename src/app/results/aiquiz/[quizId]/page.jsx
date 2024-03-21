@@ -76,6 +76,7 @@ const AiResult = async ({ params }) => {
             <Card className="my-5 p-10 w-[50%] mx-auto">
               <Image
                 src={imageUrl}
+                alt="gif"
                 className={`mx-auto ${
                   data?.similarityPercentage >= 80
                     ? "w-[200px] h-[200px]"
@@ -119,6 +120,7 @@ const AiResult = async ({ params }) => {
 
                 return (
                   <div
+                  key={index}
                     className="border flex items-center justify-between border-muted p-5 w-full rounded-[10px]
                    hover:border hover:border-muted-foreground hover:bg-muted cursor-pointer transition duration-300 ease"
                   >

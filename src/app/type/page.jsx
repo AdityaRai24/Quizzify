@@ -15,6 +15,7 @@ const page = () => {
             <CardHeader>
               <Image
                 src="/ai.svg"
+                alt="ai svg"
                 className="block mx-auto"
                 width={200}
                 height={200}
@@ -37,6 +38,7 @@ const page = () => {
             <CardHeader>
               <Image
                 src="/category.svg"
+                alt="categorysvg"
                 className="block mx-auto"
                 width={200}
                 height={200}

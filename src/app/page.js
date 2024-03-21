@@ -24,7 +24,7 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <Image src="/quiz.png" className="mt-[100px]" width={350} height={300}/>
+          <Image src="/quiz.png" alt="Quiz logo" className="mt-[100px]" width={350} height={300}/>
         </div>
       </div>
     </>
