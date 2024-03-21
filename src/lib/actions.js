@@ -3,9 +3,11 @@
 import MCQQuiz from "@/models/MCQQuiz";
 import Question from "@/models/Question";
 import { redirect } from "next/navigation";
+import Connection from "./Connection";
 
 export async function createQuiz(searchParams, userId) {
   try {
+    await Connection()
     const category = searchParams.category;
     const allQuestions = await Question.find({ category: category });
     const shuffledQuestions = await allQuestions.sort(
