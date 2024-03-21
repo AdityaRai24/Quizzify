@@ -10,7 +10,7 @@ import { differenceInSeconds } from "date-fns";
 const AiResult = async ({ params }) => {
   const quizId = params.quizId;
   const response = await axios.get(
-    `http://localhost:3000/api/getAiQuizResults/${quizId}`
+    `${process.env.API_URL}/api/getAiQuizResults/${quizId}`
   );
   const data = response.data;
 

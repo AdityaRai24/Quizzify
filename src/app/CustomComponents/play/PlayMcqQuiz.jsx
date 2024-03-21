@@ -57,7 +57,7 @@ const PlayMcqQuiz = ({ data }) => {
     try {
       setLoading(true);
       const response = await axios.post(
-        `http://localhost:3000/api/submitQuiz`,
+        `${process.env.API_URL}/api/submitQuiz`,
         {
           score: score,
           quizId: data?._id,

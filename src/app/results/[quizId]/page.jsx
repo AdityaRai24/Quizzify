@@ -10,7 +10,7 @@ const McqResult = async ({ params }) => {
   const quizId = params.quizId;
 
   const response = await axios.get(
-    `http://localhost:3000/api/getQuizResults/${quizId}`
+    `${process.env.API_URL}/api/getQuizResults/${quizId}`
   );
   const data = response.data;
 

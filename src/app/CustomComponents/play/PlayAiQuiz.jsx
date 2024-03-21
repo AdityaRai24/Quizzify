@@ -62,7 +62,7 @@ const PlayAiQuiz = ({
       totalSimilarity = (totalSimilarity / questionsAndAnswers.length) * 100;
       let roundedNumber = totalSimilarity.toFixed(2);
       const response = await axios.post(
-        `http://localhost:3000/api/submitAiQuiz`,
+        `${process.env.API_URL}/api/submitAiQuiz`,
         {
           quizId,
           similarityPercentage: roundedNumber,
