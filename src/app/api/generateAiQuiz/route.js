@@ -8,7 +8,7 @@ export async function POST(req, res) {
     const amount = selectedAmount;
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
+    console.log(topic);
     const format = `
     [
       {
@@ -31,14 +31,14 @@ export async function POST(req, res) {
     `;
     const prompt = `Generate ${amount} fill in the blanks question on the topic ${topic}.
     Give the output in the following format ${format}.This format is just example...dont use this in any questions. The difficulty of all the questions should be hard
-
+    If the topic is gibberish or you dont understand it dont create quiz on any other topic...
     Use just three continous underscores that is ___ for blanks..All questions must have atleast one and maximum also only one such blank.
     `;
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
+    console.log(text);
     const questionsAndAnswers = JSON.parse(text);
-    console.log(questionsAndAnswers)
     const create = await AiQuiz.create({
       userId: userId,
       topic: topic,
@@ -49,4 +49,3 @@ export async function POST(req, res) {
     return NextResponse.json(error, { status: 500 });
   }
 }
-

@@ -7,7 +7,7 @@ import React from "react";
 import { compareTwoStrings } from "string-similarity";
 import { differenceInSeconds } from "date-fns";
 
-const page = async ({ params }) => {
+const AiResult = async ({ params }) => {
   const quizId = params.quizId;
   const response = await axios.get(
     `http://localhost:3000/api/getAiQuizResults/${quizId}`
@@ -163,4 +163,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default AiResult;

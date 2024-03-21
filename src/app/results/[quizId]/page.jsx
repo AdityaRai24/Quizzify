@@ -6,7 +6,7 @@ import { differenceInSeconds } from "date-fns";
 import Image from "next/image";
 import React from "react";
 
-const page = async ({ params }) => {
+const McqResult = async ({ params }) => {
   const quizId = params.quizId;
 
   const response = await axios.get(
@@ -136,4 +136,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default McqResult;

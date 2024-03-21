@@ -3,7 +3,7 @@ import Navbar from "../CustomComponents/Navbar";
 import Category from "../CustomComponents/Category";
 import McqQuizForm from "../CustomComponents/forms/McqQuizForm";
 
-const page = ({ searchParams }) => {
+const McqPage = ({ searchParams }) => {
   return (
     <>
       <Navbar />
@@ -25,4 +25,4 @@ const page = ({ searchParams }) => {
   );
 };
 
-export default page;
+export default McqPage;

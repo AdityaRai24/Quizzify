@@ -9,7 +9,7 @@ import { signIn, useSession } from "next-auth/react";
 import toast from "react-hot-toast";
 import { redirect, useRouter } from "next/navigation";
 
-const page = () => {
+const SignupPage = () => {
 
   const initialValues = {
     username: "",
@@ -117,4 +117,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SignupPage;
