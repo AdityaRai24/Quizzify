@@ -1,6 +1,8 @@
 import MCQQuiz from "@/models/MCQQuiz";
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export async function POST(req, res) {
   try {
     const { score, quizId, userAnswers, timeTaken } = await req.json();

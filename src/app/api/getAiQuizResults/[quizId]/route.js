@@ -2,6 +2,8 @@ import AiQuiz from "@/models/AIQuiz"
 import MCQQuiz from "@/models/MCQQuiz"
 import { NextResponse } from "next/server"
 
+export const runtime = "edge";
+
 export async function GET(req,{params}){
     try {
         const quizId = params.quizId

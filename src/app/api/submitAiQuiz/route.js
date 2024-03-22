@@ -1,6 +1,8 @@
 import AiQuiz from "@/models/AIQuiz";
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export async function POST(req, res) {
   try {
     const { similarityPercentage,topic, quizId, userAnswers,answerTime } = await req.json();

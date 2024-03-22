@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import AiQuiz from "@/models/AIQuiz";
 
+export const runtime = "edge";
+
 export async function POST(req, res) {
   try {
     const { topic, selectedAmount, userId } = await req.json();
