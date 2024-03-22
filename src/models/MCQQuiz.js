@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import Question from "./Question";
 
 const quizSchema = mongoose.Schema({
     userId: {
@@ -7,7 +8,7 @@ const quizSchema = mongoose.Schema({
     },
     questions: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Question"
+        ref: Question
     }],
     score: {
         type: Number
