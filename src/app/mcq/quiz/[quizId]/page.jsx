@@ -10,6 +10,7 @@ const page = async ({ params }) => {
     `${process.env.NEXT_PUBLIC_API_URL}/api/getQuizDetails/${quizId}`
   );
   const data = response.data
+    console.log(data)
 
   return (
     <div>

@@ -1,9 +1,8 @@
 "use server";
 
+import Connection from "./Connection";
 import MCQQuiz from "@/models/MCQQuiz";
 import Question from "@/models/Question";
-import { redirect } from "next/navigation";
-import Connection from "./Connection";
 
 export async function createQuiz(searchParams, userId) {
   try {
