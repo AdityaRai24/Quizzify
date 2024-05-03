@@ -12,13 +12,7 @@ const Navbar = () => {
         >
           Quizzify
         </Link>
-        <div className="flex items-center justify-center gap-5">
-          <h1>Home</h1>
-          <h1>About</h1>
-          <h1>Play</h1>
-          <h1>Contact</h1>
-        </div>
-        <Suspense fallback={<p>Loading weather...</p>}>
+        <Suspense fallback={<p>Loading...</p>}>
           <UserNav />
         </Suspense>
       </div>

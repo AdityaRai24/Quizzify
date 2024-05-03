@@ -60,7 +60,7 @@ export function AiQuizForm() {
 
 
   return (
-    <div className="flex items-center justify-center w-[35%] mx-auto mt-[100px]">
+    <div className="flex items-center justify-center w-[85%] md:w-[35%] mx-auto h-[85vh] ">
       <Card className="w-full">
         <CardHeader>
           <CardTitle>Create Quiz</CardTitle>

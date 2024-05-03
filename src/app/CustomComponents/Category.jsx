@@ -28,12 +28,12 @@ const Category = () => {
 
 
   return (
-    <div className="flex w-[45%] gap-[20px] items-center justify-center flex-wrap">
+    <div className="flex mt-[40px] md:mt-[40px] w-full md:w-[45%] gap-[15px] md:gap-[20px] items-center justify-center flex-wrap">
       <Card
         onClick={() => handleClick("Entertainment")}
         className={` ${
           category === "Entertainment" ? "border border-white scale-[1.05]" : ""
-        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[45%] p-10 items-center justify-center flex-col`}
+        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[47%] md:w-[45%] p-5 md:p-10 items-center justify-center flex-col`}
       >
         <Image
           src={"/entertainment.svg"}
@@ -42,7 +42,7 @@ const Category = () => {
           width={200}
           height={200}
         />
-        <h1 className="text-2xl font-medium pt-3 tracking-wider">
+        <h1 className=" text-md md:text-2xl font-medium px-3 tracking-wider">
           Entertainment
         </h1>
       </Card>
@@ -50,7 +50,7 @@ const Category = () => {
         onClick={() => handleClick("History")}
         className={` ${
           category === "History" ? "border border-white scale-[1.05]" : ""
-        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[45%] p-10 items-center justify-center flex-col`}
+        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[47%] md:w-[45%] p-5 md:p-10 items-center justify-center flex-col`}
       >
         <Image
           src={"/history.svg"}
@@ -59,13 +59,13 @@ const Category = () => {
           width={200}
           height={200}
         />
-        <h1 className="text-2xl font-medium pt-3 tracking-wider">History</h1>
+        <h1 className=" text-md md:text-2xl font-medium px-3 tracking-wider">History</h1>
       </Card>
       <Card
         onClick={() => handleClick("Science")}
         className={` ${
           category === "Science" ? "border border-white scale-[1.05]" : ""
-        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[45%] p-10 items-center justify-center flex-col`}
+        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease w-[47%] md:w-[45%] p-5 md:p-10 items-center justify-center flex-col`}
       >
         <Image
           src={"/science.svg"}
@@ -74,13 +74,13 @@ const Category = () => {
           width={200}
           height={200}
         />
-        <h1 className="text-2xl font-medium pt-3 tracking-wider">Science</h1>
+        <h1 className=" text-md md:text-2xl font-medium px-3 tracking-wider">Science</h1>
       </Card>
       <Card
         onClick={() => handleClick("Sports")}
         className={` ${
           category === "Sports" ? "border border-white scale-[1.05]" : ""
-        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease  w-[45%] p-10 items-center justify-center flex-col`}
+        } flex cursor-pointer hover:border hover:border-white hover:scale-[1.05] transition duration-300 ease  w-[47%] md:w-[45%] p-5 md:p-10 items-center justify-center flex-col`}
       >
         <Image
           src={"/sports.svg"}
@@ -89,7 +89,7 @@ const Category = () => {
           width={200}
           height={200}
         />
-        <h1 className="text-2xl font-medium pt-3 tracking-wider">Sports</h1>
+        <h1 className=" text-md md:text-2xl font-medium px-3 tracking-wider">Sports</h1>
       </Card>
     </div>
   );

@@ -11,7 +11,7 @@ const UserNav = () => {
   const { data: session } = useSession();
 
   return (
-    <div className="flex items-center justify-center gap-3">
+    <div className="hidden md:flex items-center justify-center gap-3">
     {!session ? (
       <>
         <Link href="/login">
